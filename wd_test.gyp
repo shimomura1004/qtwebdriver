@@ -85,6 +85,7 @@
             },
             'xcode_settings': {
               'FRAMEWORK_SEARCH_PATHS': '<(QT_LIB_PATH)',
+              'LD_RUNPATH_SEARCH_PATHS': '<(QT_LIB_PATH)',
             },
           } ],
           ['OS=="android"', {
@@ -181,6 +182,7 @@
               ],
               'xcode_settings': {
                 'FRAMEWORK_SEARCH_PATHS': '<(QT_LIB_PATH)',
+                'LD_RUNPATH_SEARCH_PATHS': '<(QT_LIB_PATH)',
               },
             },
           } ],
@@ -323,7 +325,13 @@
             } ],
             [ 'OS=="mac"', {
               'link_settings': {
-                'libraries': ['<(QT_LIB_PATH)/QtWebKit.framework','<(QT_LIB_PATH)/QtWebKitWidgets.framework',],
+                'libraries': [
+                  '<(QT_LIB_PATH)/QtWebKit.framework',
+                  '<(QT_LIB_PATH)/QtWebKitWidgets.framework'
+                ],
+              },
+              'xcode_settings': {
+                'LD_RUNPATH_SEARCH_PATHS': '<(QT_LIB_PATH)',
               },
             } ],
           ],
@@ -345,6 +353,9 @@
             [ 'OS=="mac"', {
               'link_settings': {
                 'libraries': ['<(QT_LIB_PATH)/QtWebKit.framework',],
+              },
+              'xcode_settings': {
+                'LD_RUNPATH_SEARCH_PATHS': '<(QT_LIB_PATH)',
               },
             } ],
           ],
