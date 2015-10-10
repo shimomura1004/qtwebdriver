@@ -100,7 +100,7 @@
 
     [ 'OS == "mac"', {
       'xcode_settings': {
-        'SDKROOT': 'macosx10.8',
+        'SDKROOT': 'macosx10.11',
         'FRAMEWORK_SEARCH_PATHS': '<(QT_LIB_PATH)',
       },
     } ],

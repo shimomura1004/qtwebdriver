@@ -68,15 +68,15 @@
           [ 'OS=="mac"', {
             'link_settings': {
               'libraries': [
-                '<(QT_LIB_PATH)/libQt5Network.a',
-                '<(QT_LIB_PATH)/libQt5Gui.a',
-                '<(QT_LIB_PATH)/libQt5Core.a',
-                '<(QT_LIB_PATH)/libQt5Widgets.a',
-                '<(QT_LIB_PATH)/libQt5Qml.a',
-                '<(QT_LIB_PATH)/libQt5Quick.a',
-                '<(QT_LIB_PATH)/libQt5MultimediaWidgets.a',
-                '<(QT_LIB_PATH)/libQt5Multimedia.a',
-                '<(QT_LIB_PATH)/libQt5Xml.a',
+                '<(QT_LIB_PATH)/QtNetwork.framework',
+                '<(QT_LIB_PATH)/QtGui.framework',
+                '<(QT_LIB_PATH)/QtCore.framework',
+                '<(QT_LIB_PATH)/QtWidgets.framework',
+                '<(QT_LIB_PATH)/QtQml.framework',
+                '<(QT_LIB_PATH)/QtQuick.framework',
+                '<(QT_LIB_PATH)/QtMultimediaWidgets.framework',
+                '<(QT_LIB_PATH)/QtMultimedia.framework',
+                '<(QT_LIB_PATH)/QtXml.framework',
                 '$(SDKROOT)/System/Library/Frameworks/Foundation.framework',
                 '$(SDKROOT)/System/Library/Frameworks/CoreFoundation.framework',
                 '$(SDKROOT)/System/Library/Frameworks/ApplicationServices.framework',
@@ -323,7 +323,7 @@
             } ],
             [ 'OS=="mac"', {
               'link_settings': {
-                'libraries': ['<(QT_LIB_PATH)/libQt5WebKit.a','<(QT_LIB_PATH)/libQt5WebKitWidgets.a',],
+                'libraries': ['<(QT_LIB_PATH)/QtWebKit.framework','<(QT_LIB_PATH)/QtWebKitWidgets.framework',],
               },
             } ],
           ],
